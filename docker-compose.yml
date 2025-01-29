@@ -1,0 +1,37 @@
+services:
+
+  postgres:
+    image: postgres
+    container_name: datalore-test-task-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - ./init-scripts:/docker-entrypoint-initdb.d
+      - ./entrypoint.sh:/docker-entrypoint-initdb.d/entrypoint.sh
+      - postgres-data:/var/lib/postgresql/data
+    command: [ "/bin/bash", "/docker-entrypoint-initdb.d/entrypoint.sh" ]
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+
+  redis:
+    image: redis
+    container_name: datalore-test-task-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - app-network
+
+volumes:
+  postgres-data:
+  redis-data:
+
+networks:
+  app-network:
+    driver: bridge

@@ -1,0 +1,16 @@
+INSERT INTO items (name, price, quantity)
+VALUES ('Apple iPhone 15 Pro (256GB, Black Titanium)', 999.00, 19),
+       ('Samsung Galaxy S23 Ultra (512GB, Phantom Black)', 1199.00, 143),
+       ('Sony WH-1000XM5 Noise Cancelling Headphones', 349.99, 205),
+       ('Dell XPS 15 Laptop (i9, 32GB RAM, 1TB SSD)', 1899.99, 112),
+       ('Apple MacBook Air M2 (13-inch, 256GB SSD, Space Gray)', 1099.00, 403),
+       ('LG C3 OLED TV (55-inch, 4K HDR)', 1399.99, 65),
+       ('Bose QuietComfort Earbuds II (Black)', 249.00, 214),
+       ('ASUS ROG Strix RTX 4080 Gaming Graphics Card', 1499.00, 98),
+       ('Logitech MX Master 3S Wireless Mouse', 99.99, 182),
+       ('Samsung 2TB 990 Pro NVMe SSD', 179.99, 411),
+       ('Nintendo Switch OLED (White)', 349.00, 346),
+       ('PlayStation 5 (Disc Edition)', 499.99, 243),
+       ('Microsoft Surface Pro 9 (i7, 16GB RAM, 512GB SSD)', 1599.00, 405),
+       ('Razer Huntsman Elite Gaming Keyboard', 199.99, 168),
+       ('GoPro HERO12 Black Action Camera', 399.99, 230);
